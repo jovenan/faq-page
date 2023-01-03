@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Fast Car Washer</header>
+    <main>
+        <section class="banner">
+            <h1>FAQ</h1>
+            <p>Do you need answers!? Search here!</p>
+        </section>
+        <section class="questions-answers">
+            <div class="question question0">
+                Do I need this product?
+                <span>+</span>
+                <span>-</span>
+            </div>
+            <div class="answer answer0">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui possimus aspernatur necessitatibus quisquam dolorum maiores sapiente nesciunt impedit illum aliquam sequi, veniam delectus aut ullam ea dignissimos minima dolores nisi?
+            </div>
+            <div class="question question1">
+                Do I need to register?
+                <span>+</span>
+                <span>-</span>
+            </div>
+            <div class="answer answer1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui possimus aspernatur necessitatibus quisquam dolorum maiores sapiente nesciunt impedit illum aliquam sequi, veniam delectus aut ullam ea dignissimos minima dolores nisi?
+            </div>
+            <div class="question question2">
+                What is the product?
+                <span>+</span>
+                <span>-</span>
+            </div>
+            <div class="answer answer2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui possimus aspernatur necessitatibus quisquam dolorum maiores sapiente nesciunt impedit illum aliquam sequi, veniam delectus aut ullam ea dignissimos minima dolores nisi?
+            </div>
+            <div class="question question3">
+                how long delivery time?
+                <span>+</span>
+                <span>-</span>
+            </div>
+            <div class="answer answer3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui possimus aspernatur necessitatibus quisquam dolorum maiores sapiente nesciunt impedit illum aliquam sequi, veniam delectus aut ullam ea dignissimos minima dolores nisi?
+            </div>
+            <div class="question question4">
+                how much will this cost me?
+                <span>+</span>
+                <span>-</span>
+            </div>
+            <div class="answer answer4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui possimus aspernatur necessitatibus quisquam dolorum maiores sapiente nesciunt impedit illum aliquam sequi, veniam delectus aut ullam ea dignissimos minima dolores nisi?
+            </div>
+            <div class="question question5">
+                If I don't like it, can I return it?
+                <span>+</span>
+                <span>-</span>
+            </div>
+            <div class="answer answer5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui possimus aspernatur necessitatibus quisquam dolorum maiores sapiente nesciunt impedit illum aliquam sequi, veniam delectus aut ullam ea dignissimos minima dolores nisi?
+            </div>
+        </section>
+    </main>
+    <script>
+        const questions = document.querySelectorAll(".question");
+
+        questions.forEach((question, index) => {
+            question.addEventListener("click", () => {
+                document.querySelector(".answer" + index).classList.toggle("active");
+                question.querySelector(".span:first-child").classList.toggle("disable");
+                question.querySelector(".span:last-child").classList.toggle("active");
+            })
+        })
+    </script>
+</body>
+</html>

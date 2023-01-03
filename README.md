@@ -1,1 +1,1 @@
-# faq-page
+# FAQ page
